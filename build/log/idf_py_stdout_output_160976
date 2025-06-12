@@ -1,0 +1,295 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 11 2025 22:18:40[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21c3ch (138300) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00031c64 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (137) esp_image: segment 2: paddr=00031c88 vaddr=3ffb0000 size=03ec0h ( 16064) load[0m
+[0;32mI (147) esp_image: segment 3: paddr=00035b50 vaddr=40080000 size=0a4c8h ( 42184) load[0m
+[0;32mI (165) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a48a0h (673952) map[0m
+[0;32mI (395) esp_image: segment 5: paddr=000e48c8 vaddr=4008a4c8 size=0ba1ch ( 47644) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (425) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (443) cpu_start: Pro cpu start user code[0m
+[0;32mI (444) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (444) app_init: Application information:[0m
+[0;32mI (444) app_init: Project name:     internal_communication[0m
+[0;32mI (449) app_init: App version:      1[0m
+[0;32mI (452) app_init: Compile time:     Jun 11 2025 22:18:37[0m
+[0;32mI (457) app_init: ELF file SHA256:  3d01aa2d7...[0m
+[0;32mI (462) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (465) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB9D48 len 000262B8 (152 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 40095EE4 len 0000A11C (40 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (513) spi_flash: flash io: dio[0m
+[0;33mW (516) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+[0;32mI (590) wifi_init: rx ba win: 6[0m
+[0;32mI (600) wifi_init: accept mbox: 6[0m
+[0;32mI (600) wifi_init: tcpip mbox: 32[0m
+[0;32mI (600) wifi_init: udp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp tx win: 5760[0m
+[0;32mI (600) wifi_init: tcp rx win: 5760[0m
+[0;32mI (610) wifi_init: tcp mss: 1440[0m
+[0;32mI (610) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (610) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (620) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (1010) mesh_main: <MESH_EVENT_MESH_STARTED>ID:77:77:77:77:77:77[0m
+[0;32mI (1010) mesh_main: mesh starts successfully, heap:167588, root not fixed<0>(tree), ps:1[0m
+[0;32mI (1010) main_task: Returned from app_main()[0m
+[0;32mI (5220) mesh_main: <MESH_EVENT_FIND_NETWORK>new channel:1, router BSSID:00:00:00:00:00:00[0m
+[0;32mI (8660) mesh_main: <MESH_EVENT_PARENT_DISCONNECTED>reason:4[0m
+[0;32mI (8680) mesh_main: <MESH_EVENT_ROOT_FIXED>fixed[0m
+[0;32mI (8680) mesh_main: <MESH_EVENT_PS_PARENT_DUTY>duty:10[0m
+[0;32mI (8680) mesh_main: <MESH_EVENT_ROOT_ADDRESS>root address:00:4b:12:3b:0f:c1[0m
+[0;32mI (8710) mesh_main: <MESH_EVENT_PARENT_CONNECTED>layer:0-->2, parent:00:4b:12:3b:0f:c1<layer2>, ID:77:77:77:77:77:77, duty:10[0m
+[0;32mI (8710) mesh_main: <MESH_EVENT_TODS_REACHABLE>state:0[0m
+[0;32mI (8710) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (8710) mesh_main: <MESH_EVENT_ROOT_ADDRESS>root address:00:4b:12:3b:0f:c1[0m
+[0;32mI (17110) mesh_node: Motion detected![0m
+[0;32mI (17120) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (17120) mesh_node: Message sent to root: 2[0m
+[0;32mI (18720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (22320) mesh_node: Motion detected![0m
+[0;32mI (22350) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (22360) mesh_node: Message sent to root: 2[0m
+[0;32mI (27560) mesh_node: Motion detected![0m
+[0;32mI (27650) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (27650) mesh_node: Message sent to root: 2[0m
+[0;32mI (28720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (32850) mesh_node: Motion detected![0m
+[0;32mI (32950) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (32950) mesh_node: Message sent to root: 2[0m
+[0;32mI (38550) mesh_node: Motion detected![0m
+[0;32mI (38630) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (38640) mesh_node: Message sent to root: 2[0m
+[0;32mI (38720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (43840) mesh_node: Motion detected![0m
+[0;32mI (44320) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (44330) mesh_node: Message sent to root: 2[0m
+[0;32mI (48720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (56130) mesh_node: Motion detected![0m
+[0;32mI (56470) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (56480) mesh_node: Message sent to root: 2[0m
+[0;32mI (58720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (61680) mesh_node: Motion detected![0m
+[0;32mI (61760) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (61770) mesh_node: Message sent to root: 2[0m
+[0;32mI (66970) mesh_node: Motion detected![0m
+[0;32mI (67070) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (67080) mesh_node: Message sent to root: 2[0m
+[0;32mI (68720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (72680) mesh_node: Motion detected![0m
+[0;32mI (78290) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (78300) mesh_node: Message sent to root: 2[0m
+[0;32mI (78720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (84100) mesh_node: Motion detected![0m
+[0;32mI (84520) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (84530) mesh_node: Message sent to root: 2[0m
+[0;32mI (88720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (89730) mesh_node: Motion detected![0m
+[0;32mI (89800) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (89800) mesh_node: Message sent to root: 2[0m
+[0;32mI (95000) mesh_node: Motion detected![0m
+[0;32mI (95490) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (95490) mesh_node: Message sent to root: 2[0m
+[0;32mI (98720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (100690) mesh_node: Motion detected![0m
+[0;32mI (100720) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (100730) mesh_node: Message sent to root: 2[0m
+[0;32mI (105930) mesh_node: Motion detected![0m
+[0;32mI (106410) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (106410) mesh_node: Message sent to root: 2[0m
+[0;32mI (108720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (111610) mesh_node: Motion detected![0m
+[0;32mI (112090) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (112100) mesh_node: Message sent to root: 2[0m
+[0;32mI (117300) mesh_node: Motion detected![0m
+[0;32mI (117780) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (117790) mesh_node: Message sent to root: 2[0m
+[0;32mI (118720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (128720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (138720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (148720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (158720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (168720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (178720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (188720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (198720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (208720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (218720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (228720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (238720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (248720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (258720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (268720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (278720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (288720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (298720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (308720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (318720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (328720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (338720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (348720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (358720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (368720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (378720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (388720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (398720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (408720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (418720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (428720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (438720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (448720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (458720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (468720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (478720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (488720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (498720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (508720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (518720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (528720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (538720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (548720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (558720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (568720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (578720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (588720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (598720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (608720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (618720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (628720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (638720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (648720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (658720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (668720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (678720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (688720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (698720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (708720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (718720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (728720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (738720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (748720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (758720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (768720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (778720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (788720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (798720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (808720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (818720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (828720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (838720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (848720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (858720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (868720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (878720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (888720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (898720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (908720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (918720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (928720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (938720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (948720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (958720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (968720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (978720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (988720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (998720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1008720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1018720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1028720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1038720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1048720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1058720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1068720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1078720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1088720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1098720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1108720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1118720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1128720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1138720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1138790) mesh_node: Motion detected![0m
+[0;32mI (1139580) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1139590) mesh_node: Message sent to root: 2[0m
+[0;32mI (1144790) mesh_node: Motion detected![0m
+[0;32mI (1148720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1151350) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1151350) mesh_node: Message sent to root: 2[0m
+[0;32mI (1156550) mesh_node: Motion detected![0m
+[0;32mI (1157030) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1157040) mesh_node: Message sent to root: 2[0m
+[0;32mI (1158720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1162240) mesh_node: Motion detected![0m
+[0;32mI (1162330) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1162330) mesh_node: Message sent to root: 2[0m
+[0;32mI (1167530) mesh_node: Motion detected![0m
+[0;32mI (1167630) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1167630) mesh_node: Message sent to root: 2[0m
+[0;32mI (1168720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1172830) mesh_node: Motion detected![0m
+[0;32mI (1173310) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1173320) mesh_node: Message sent to root: 2[0m
+[0;32mI (1178520) mesh_node: Motion detected![0m
+[0;32mI (1178610) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1178610) mesh_node: Message sent to root: 2[0m
+[0;32mI (1178720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1183810) mesh_node: Motion detected![0m
+[0;32mI (1183990) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1183990) mesh_node: Message sent to root: 2[0m
+[0;32mI (1188720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1189190) mesh_node: Motion detected![0m
+[0;32mI (1189680) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1189690) mesh_node: Message sent to root: 2[0m
+[0;32mI (1194890) mesh_node: Motion detected![0m
+[0;32mI (1195060) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1195060) mesh_node: Message sent to root: 2[0m
+[0;32mI (1198720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1200260) mesh_node: Motion detected![0m
+[0;32mI (1208720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1214960) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1214970) mesh_node: Message sent to root: 2[0m
+[0;32mI (1218720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1220170) mesh_node: Motion detected![0m
+[0;32mI (1220500) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1220510) mesh_node: Message sent to root: 2[0m
+[0;32mI (1225710) mesh_node: Motion detected![0m
+[0;32mI (1225740) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1225740) mesh_node: Message sent to root: 2[0m
+[0;32mI (1228720) mesh_main: layer:2, rtableSize:1, NODE[0m
+[0;32mI (1230940) mesh_node: Motion detected![0m
+[0;32mI (1230960) mesh_node: Message sent to root: MOTIONNNNNNNN[0m
+[0;32mI (1230960) mesh_node: Message sent to root: 2[0m

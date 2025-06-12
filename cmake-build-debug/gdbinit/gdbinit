@@ -1,0 +1,2 @@
+source /home/royivri/mesh_test/mesh_node/cmake-build-debug/gdbinit/symbols
+source /home/royivri/mesh_test/mesh_node/cmake-build-debug/gdbinit/connect

@@ -1,0 +1,1 @@
+[Errno 16] could not open port /dev/ttyUSB2: [Errno 16] Device or resource busy: '/dev/ttyUSB2'

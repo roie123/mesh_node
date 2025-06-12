@@ -1,0 +1,75 @@
+[1/5] cd /home/royivri/mesh_test/mesh_node/build/esp-idf/esptool_py && /home/royivri/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/royivri/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/royivri/mesh_test/mesh_node/build/partition_table/partition-table.bin /home/royivri/mesh_test/mesh_node/build/internal_communication.bin
+internal_communication.bin binary size 0xe0490 bytes. Smallest app partition is 0x100000 bytes. 0x1fb70 bytes (12%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/royivri/mesh_test/mesh_node/build/bootloader/esp-idf/esptool_py && /home/royivri/.espressif/python_env/idf5.4_py3.13_env/bin/python /home/royivri/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/royivri/mesh_test/mesh_node/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/royivri/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/royivri/esp/esp-idf -D "SERIAL_TOOL=/home/royivri/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/home/royivri/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/royivri/mesh_test/mesh_node/build -P /home/royivri/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB2 -b 115200 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 internal_communication.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB2
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 00:4b:12:3c:04:7c
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f0fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 25984 bytes to 16378...
+Writing at 0x00001000... (100 %)
+Wrote 25984 bytes (16378 compressed) at 0x00001000 in 1.7 seconds (effective 125.0 kbit/s)...
+Hash of data verified.
+Compressed 918672 bytes to 602474...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d312... (5 %)
+Writing at 0x000287e4... (8 %)
+Writing at 0x000332f8... (10 %)
+Writing at 0x0003a66b... (13 %)
+Writing at 0x0003fc33... (16 %)
+Writing at 0x00045141... (18 %)
+Writing at 0x0004a990... (21 %)
+Writing at 0x0004ff78... (24 %)
+Writing at 0x00055b6a... (27 %)
+Writing at 0x0005b18b... (29 %)
+Writing at 0x000608fd... (32 %)
+Writing at 0x00065fa5... (35 %)
+Writing at 0x0006b5bb... (37 %)
+Writing at 0x00070a72... (40 %)
+Writing at 0x00075ed8... (43 %)
+Writing at 0x0007b5eb... (45 %)
+Writing at 0x00080ca5... (48 %)
+Writing at 0x000860df... (51 %)
+Writing at 0x0008b301... (54 %)
+Writing at 0x00090755... (56 %)
+Writing at 0x00095fc8... (59 %)
+Writing at 0x0009b9a5... (62 %)
+Writing at 0x000a0cc4... (64 %)
+Writing at 0x000a63ac... (67 %)
+Writing at 0x000ac191... (70 %)
+Writing at 0x000b12e7... (72 %)
+Writing at 0x000b6555... (75 %)
+Writing at 0x000bb8b2... (78 %)
+Writing at 0x000c0a0e... (81 %)
+Writing at 0x000c5b20... (83 %)
+Writing at 0x000cb0aa... (86 %)
+Writing at 0x000d0b6c... (89 %)
+Writing at 0x000da3f9... (91 %)
+Writing at 0x000e0ced... (94 %)
+Writing at 0x000e6ac6... (97 %)
+Writing at 0x000ec0b4... (100 %)
+Wrote 918672 bytes (602474 compressed) at 0x00010000 in 53.3 seconds (effective 137.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 681.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

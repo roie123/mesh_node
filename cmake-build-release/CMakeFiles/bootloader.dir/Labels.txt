@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/royivri/mesh_test/mesh_node/cmake-build-release/CMakeFiles/bootloader
+/home/royivri/mesh_test/mesh_node/cmake-build-release/CMakeFiles/bootloader.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/CMakeFiles/bootloader-complete.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/royivri/mesh_test/mesh_node/cmake-build-release/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

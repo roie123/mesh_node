@@ -1,0 +1,3 @@
+[0;32mI (1070) mesh_main: <MESH_EVENT_MESH_STARTED>ID:77:77:77:77:77:77[0m
+[0;32mI (1070) mesh_main: mesh starts successfully, heap:167804, root not fixed<0>(tree), ps:1[0m
+[0;32mI (1070) main_task: Returned from app_main()[0m

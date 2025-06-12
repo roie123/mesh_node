@@ -1,0 +1,135 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 11 2025 22:18:40[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=21c7ch (138364) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00031ca4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (137) esp_image: segment 2: paddr=00031cc8 vaddr=3ffb0000 size=03ec0h ( 16064) load[0m
+[0;32mI (147) esp_image: segment 3: paddr=00035b90 vaddr=40080000 size=0a488h ( 42120) load[0m
+[0;32mI (165) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a49b4h (674228) map[0m
+[0;32mI (396) esp_image: segment 5: paddr=000e49dc vaddr=4008a488 size=0ba5ch ( 47708) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (425) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (444) cpu_start: Pro cpu start user code[0m
+[0;32mI (444) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (444) app_init: Application information:[0m
+[0;32mI (444) app_init: Project name:     internal_communication[0m
+[0;32mI (449) app_init: App version:      1[0m
+[0;32mI (452) app_init: Compile time:     Jun 11 2025 22:18:37[0m
+[0;32mI (457) app_init: ELF file SHA256:  ce8d2dabf...[0m
+[0;32mI (462) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (466) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (469) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (473) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (477) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (484) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB9D48 len 000262B8 (152 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 40095EE4 len 0000A11C (40 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (517) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (530) main_task: Started on CPU0[0m
+[0;32mI (540) main_task: Calling app_main()[0m
+[0;32mI (590) wifi_init: rx ba win: 6[0m
+[0;32mI (600) wifi_init: accept mbox: 6[0m
+[0;32mI (600) wifi_init: tcpip mbox: 32[0m
+[0;32mI (600) wifi_init: udp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp tx win: 5760[0m
+[0;32mI (600) wifi_init: tcp rx win: 5760[0m
+[0;32mI (610) wifi_init: tcp mss: 1440[0m
+[0;32mI (610) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (610) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (620) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (700) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[1;31mE (1020) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1020) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1020) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1020) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1030) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1030) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1040) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1040) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1050) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1050) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1060) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1060) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1070) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1070) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1080) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1080) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1090) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1090) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1100) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1110) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1110) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1120) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1120) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1130) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1130) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1140) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1140) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1150) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1150) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1160) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1160) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1170) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1170) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1180) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1180) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1190) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1190) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1200) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1200) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1210) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1210) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1220) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1220) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1230) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1230) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1240) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1240) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1250) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1250) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1260) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1260) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1270) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1270) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1280) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1280) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1290) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1290) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1300) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1300) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1310) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[1;31mE (1320) ROOT_RECV: Receive error: ESP_ERR_MESH_NOT_START[0m
+[0;32mI (1320) mesh_main: <MESH_EVENT_MESH_STARTED>ID:77:77:77:77:77:77[0m
+[0;32mI (1320) mesh_main: mesh starts successfully, heap:163100, root not fixed<0>(tree), ps:1[0m
+[0;32mI (1330) main_task: Returned from app_main()[0m
+[0;32mI (5530) mesh_main: <MESH_EVENT_FIND_NETWORK>new channel:1, router BSSID:00:00:00:00:00:00[0m
+[0;32mI (7620) mesh_main: <MESH_EVENT_PARENT_DISCONNECTED>reason:2[0m

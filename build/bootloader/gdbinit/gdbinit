@@ -1,0 +1,2 @@
+source /home/royivri/mesh_test/mesh_node/build/bootloader/gdbinit/symbols
+source /home/royivri/mesh_test/mesh_node/build/bootloader/gdbinit/connect
